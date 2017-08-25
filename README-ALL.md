@@ -73,6 +73,6 @@ docker run --rm -e CO_DATA='git-url=https://github.com/minhhh/regex.git entry-pa
 docker run --rm -e CO_DATA='git-url=https://github.com/minhhh/regex.git entry-path=.' containerops/pytest
 docker run --rm -e CO_DATA='git-url=https://github.com/minhhh/regex.git entry-path=. version=python' containerops/pytest
 docker run --rm -e CO_DATA='git-url=https://github.com/CleanCut/green.git entry-path=.' containerops/tox
-docker run --rm -e CO_DATA='git-url=https://github.com/minhhh/regex.git entry-path=.' containerops/unittest
-docker run --rm -e CO_DATA='git-url=https://github.com/minhhh/regex.git entry-path=. version=python' containerops/unittest
+docker run --rm -e CO_DATA='git-url=https://github.com/minhhh/regex.git entry-module=test.test_regex' containerops/unittest
+docker run --rm -e CO_DATA='git-url=https://github.com/minhhh/regex.git entry-module=test.test_regex version=python' containerops/unittest
 ```
